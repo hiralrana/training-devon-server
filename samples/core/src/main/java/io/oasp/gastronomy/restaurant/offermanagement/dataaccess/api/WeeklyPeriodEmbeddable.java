@@ -31,6 +31,7 @@ public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
    *
    * @return startingDay the {@link DayOfWeek} the period starts.
    */
+  @Override
   public DayOfWeek getStartingDay() {
 
     return this.startingDay;
@@ -41,6 +42,7 @@ public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
    *
    * @param startingDay the {@link DayOfWeek} the period starts.
    */
+  @Override
   public void setStartingDay(DayOfWeek startingDay) {
 
     this.startingDay = startingDay;
@@ -51,6 +53,7 @@ public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
    *
    * @return startingHour the hour (in 24h-format) the period starts.
    */
+  @Override
   @Max(24)
   @Min(0)
   public int getStartingHour() {
@@ -63,6 +66,7 @@ public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
    *
    * @param startingHour the hour (in 24h-format) the period starts.
    */
+  @Override
   public void setStartingHour(int startingHour) {
 
     this.startingHour = startingHour;
@@ -73,6 +77,7 @@ public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
    *
    * @return endingDay the {@link DayOfWeek} the period ends.
    */
+  @Override
   public DayOfWeek getEndingDay() {
 
     return this.endingDay;
@@ -83,6 +88,7 @@ public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
    *
    * @param endingDay the {@link DayOfWeek} the period ends.
    */
+  @Override
   public void setEndingDay(DayOfWeek endingDay) {
 
     this.endingDay = endingDay;
@@ -93,6 +99,7 @@ public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
    *
    * @return endingHour the hour (in 24h-format) the period ends.
    */
+  @Override
   @Max(24)
   @Min(0)
   public int getEndingHour() {
@@ -105,6 +112,7 @@ public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
    *
    * @param endingHour the hour (in 24h-format) the period ends.
    */
+  @Override
   public void setEndingHour(int endingHour) {
 
     this.endingHour = endingHour;
