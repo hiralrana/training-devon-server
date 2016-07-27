@@ -25,6 +25,8 @@ public class SpecialEntity extends ApplicationPersistenceEntity implements Speci
 
   private String name;
 
+  private String comment;
+
   private OfferEntity offer;
 
   @Embedded
@@ -35,6 +37,22 @@ public class SpecialEntity extends ApplicationPersistenceEntity implements Speci
   private Date created;
 
   private static final long serialVersionUID = 1L;
+
+  /**
+   * @return comment
+   */
+  public String getComment() {
+
+    return this.comment;
+  }
+
+  /**
+   * @param comment new value of {@link #getcomment}.
+   */
+  public void setComment(String comment) {
+
+    this.comment = comment;
+  }
 
   /**
    * @return created

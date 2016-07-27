@@ -20,6 +20,12 @@ public class SpecialEto extends AbstractEto implements Special {
 
   private WeeklyPeriod activePeriod;
 
+  private Money specialPrice;
+
+  private Date created;
+
+  private String comment;
+
   /**
    * @return activePeriod
    */
@@ -37,10 +43,6 @@ public class SpecialEto extends AbstractEto implements Special {
 
     this.activePeriod = activePeriod;
   }
-
-  private Money specialPrice;
-
-  private Date created;
 
   @Override
   public String getName() {
@@ -156,4 +158,17 @@ public class SpecialEto extends AbstractEto implements Special {
     }
     return true;
   }
+
+  @Override
+  public String getComment() {
+
+    return comment;
+  }
+
+  @Override
+  public void setComment(String comment) {
+
+    this.comment = comment;
+  }
+
 }
